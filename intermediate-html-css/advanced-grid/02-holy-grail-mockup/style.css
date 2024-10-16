@@ -11,6 +11,8 @@ li{
   display:inline-grid;
   grid-template-columns: 1fr 4fr;
   gap: 4px;
+  width: 100vw;
+  height: 100vh;
 }
 
 .container div {
@@ -31,6 +33,7 @@ li{
   grid-column-end: 3;
   grid-row-start: 1;
   grid-row-end: 2;
+  align-items: center;
 }
 .menu ul{
   display: grid;
@@ -49,7 +52,7 @@ li{
   grid-column-start: 1;
   grid-column-end: 1;
   grid-row-start: 2;
-  grid-row-end: 3;
+  grid-row-end: 4;
 }
 
 .sidebar .photo {
@@ -87,8 +90,11 @@ li{
 .article {
   background-color: #bccbde;
   display: grid;
-  grid-template-columns: repeat(auto-fit), minmax(250px, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  /* grid-column: ; */
   gap: 15px;
+  grid-column-start: 2;
+  grid-column-end: 3;
 }
 
 .article p {
